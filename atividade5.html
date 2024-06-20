@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estados do sudeste!</title>
+</head>
+<body>
+    <input type="text" id="UF" placeholder="Digite a sigla da UF">
+    <button onclick="Estado()">Mostrar Estado!</button>
+    <p id="resultado"></p>
+
+    <script>
+        function Estado() {
+            const UF = document.getElementById('UF').value.trim().toUpperCase();
+            let estado;
+
+            switch (UF) {
+                case "SP":
+                    estado = "Seu estado é São Paulo!";
+                    break;
+                case "RJ":
+                    estado = "Seu estado é Rio de Janeiro";
+                    break;
+                case "MG":
+                    estado = "Seu estado é Minas Gerais";
+                    break;
+                case "ES":
+                    estado = "Seu estado é Espírito Santo";
+                    break;
+                default:
+                    estado = "Desculpe, sua sigla é inválida. Por favor escreva uma sigla de algum estado do Sudeste.";
+                    break;
+            }
+
+            document.getElementById('resultado').textContent = estado;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+<body>
+    <button onclick="Voto()">Voto Facultativo</button>
+    <script>
+        function Voto() {
+            var facultativo = prompt("Olá! Poderia me dizer sua idade? ");
+            
+            var idade = facultativo >= 72;
+            var idade = facultativo <= 18;
+            
+
+            
+            alert("O meu voto é facultativo? ");
+            alert(idade)
+        }
+    </script>
+</body>
+</html>

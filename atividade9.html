@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moedas</title>
+</head>
+<body>
+    <button onclick="Desconto()">Desconto de centavos</button>
+
+    <script>
+        function Desconto() {
+            var original = parseFloat(prompt("Olá! Poderia me dizer o preço original de seu produto?"));
+            var final = Math.floor(original);
+
+            alert("Seu preço final é de: " + final)
+        }
+    </script>
+</body>
+</html>

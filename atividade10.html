@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista</title>
+</head>
+<body>
+    <button onclick="Letra()">Entrevistas</button>
+
+    <script>
+        function Letra() {
+            var nome = prompt("Olá! Poderia digitar seu nome abaixo:");
+            if (!nome) {
+                alert("Por favor, digite um nome válido.");
+                return;
+            }
+            
+            var primeiraLetra = nome.charAt(0).toUpperCase();
+            var vogais = ['A', 'E', 'I', 'O', 'U'];
+
+            if (vogais.includes(primeiraLetra)) {
+                alert("Você será entrevistado na segunda-feira.");
+            } else {
+                alert("Você será entrevistado na terça-feira.");
+            }
+        }
+    </script>
+</body>
+</html>

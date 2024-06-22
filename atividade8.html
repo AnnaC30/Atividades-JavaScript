@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasolina</title>
+</head>
+<body>
+    <button onclick="Preço()">Console - preço!</button>
+
+    <script>
+        function Preço() {
+            
+            var numero = parseFloat(prompt("Olá frentista! Qual o preço atual da gasolina? "));
+            var numeroArredondado = numero.toFixed(2);
+
+            alert("O preço da gasolina é de: " + numeroArredondado);
+        }
+    </script>
+</body>
+</html>

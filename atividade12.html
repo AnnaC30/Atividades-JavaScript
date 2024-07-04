@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamada dos alunos!</title>
+</head>
+<body>
+    <button onclick="Chamada()">Fazer chamada</button>
+    <script>
+        function Chamada() {
+            let nomes = "";
+            let nome = prompt("Digite o nome do aluno (deixe em branco para terminar):");
+
+            while (nome) {
+                nomes += nome + "\n";
+                nome = prompt("Digite o nome do aluno (deixe em branco para terminar):");
+            }
+
+            console.log("Relação de Alunos Presentes:\n" + nomes);
+        }
+    </script>
+</body>
+</html>

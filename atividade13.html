@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números pares</title>
+</head>
+<body>
+    <button onclick="Pares()">Tabuada</button>
+
+    <script>
+        function Pares() {
+        let numero = parseInt(prompt("Digite um número para ver os pares até chegar no mesmo:"));
+        let pares = 0;
+
+            while (pares <= numero) {
+                console.log(pares);
+                pares += 2;
+            }
+        }
+    </script>
+</body>
+</html>

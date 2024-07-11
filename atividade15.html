@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapateira!</title>
+</head>
+<body>
+    <button onclick="sapato()">Sapateira!</button>
+    <script>
+        function sapato() {
+            console.log("Olá! Aqui está a nossa sapateira: ");
+            var tenis = ["Nike", "Adidas", "Puma", "Air Jordan"]
+            console.log(tenis[0]);
+            console.log(tenis[1]);
+            console.log(tenis[2]);
+            console.log(tenis[3]);
+
+            var escolha = prompt("Escolha um espaço: ")
+
+            if (escolha == 0) {
+            console.log("\nSua escolha foi: Nike")
+        }if(escolha == 1){
+            console.log("\nSua escolha foi: Adidas")
+        }if(escolha == 2){
+            console.log("\nSua escolha foi: Puma")
+        }if(escolha == 3){
+            console.log("\nSua escolha foi: Air Jordan")
+        }
+
+        }
+
+
+    </script>
+</body>
+</html>

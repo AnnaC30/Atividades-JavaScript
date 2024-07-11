@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamada dos alunos!</title>
+</head>
+<body>
+    <button onclick="Chamada()">Fazer chamada</button>
+    <script>
+        function Chamada() {
+            console.log("Olá! Aqui está a nossa chamada: ");
+            var presentes = 0;
+            var alunos = [];
+            var aluno;
+
+            while (true) {
+                aluno = prompt("Quais alunos estavam presentes? (Deixe vazio para terminar)");
+                if (aluno === null || aluno === "") {
+                    break;
+                }
+                alunos[presentes] = aluno;
+                presentes++;
+            }
+
+            console.log(alunos);
+        }
+    </script>
+        
+    </script>
+</body>
+</html>

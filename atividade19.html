@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+</head>
+<body>
+    <button onclick="letraMaiuscula()">Capitalize frases</button>
+    <script>
+        function letraMaiuscula() {
+            const minhaFrase = prompt("Digite sua frase abaixo: ");
+            const palavraArray = minhaFrase.split(" ");
+
+            console.log(palavraArray);
+
+            for (let i = 0; i <palavraArray.lenght; i++) {
+                palavraArray[i] = palavraArray[i][0].toUpperCase() + palavraArray[i].substring(1);
+                
+            }
+            const fraseCapitalizada = palavraArray.join(" ");
+            alert(fraseCapitalizada);
+        }
+    </script>
+</body>
+</html>

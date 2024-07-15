@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo dos clientes</title>
+</head>
+<body>
+    <script>
+        const clientes = ['Jorge', 'Roberto', 'Julia', 'Anna', 'Rodrigo'];
+        const saldos = [4530.10, -1100.43, 88.12, -97.20, 1008.10];
+
+
+        function encontrarSaldo(nomeCliente) {
+            nomeCliente = nomeCliente.toLowerCase();
+                for (let i = 0; i < clientes.length; i++) {
+                    if (clientes[i].toLowerCase() === nomeCliente) {
+                return `O saldo do cliente ${clientes[i]} é R$${saldos[i].toFixed(2)}.`;
+                }
+            }
+            return `Cliente ${nomeCliente} não encontrado.`;
+        }
+
+        var nomeCliente = prompt('Digite o nome do cliente:');
+        var resultado = encontrarSaldo(nomeCliente);
+        alert(resultado);
+    </script>

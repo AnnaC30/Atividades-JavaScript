@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média dos alunos</title>
+</head>
+<body>
+    <button onclick="media()">Média</button>
+
+    <script>
+        var alunos = [
+            {
+                nome: "Julio",
+                modulo: 5,
+                nota_4: 7,
+                nota_6: 4
+            },
+            {
+                nome: "André",
+                modulo: 2,
+                nota_4: 9,
+                nota_6: 2
+            },
+            {
+                nome: "Paula",
+                modulo: 5,
+                nota_4: 5,
+                nota_6: 10
+            },
+            {
+                nome: "Roberta",
+                modulo: 3,
+                nota_4: 10,
+                nota_6: 9
+            },
+            {
+                nome: "Carlos",
+                modulo: 4,
+                nota_4: 6,
+                nota_6: 8
+            }
+        ];
+
+        function media() {
+            alunos.forEach(function(aluno) {
+                var media = (aluno.nota_4 + aluno.nota_6) / 2;
+                var status = media >= 5 ? "Aprovado" : "Reprovado";
+                console.log(aluno.nome + " - " + status);
+            });
+        }
+    </script>
+</body>
+</html>
